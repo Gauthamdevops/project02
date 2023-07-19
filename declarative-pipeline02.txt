@@ -1,0 +1,31 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Clone Code from Git') {
+            steps {
+                echo 'Code Clone Success'
+            }
+        }
+        stage('Build Code') {
+            steps {
+                echo 'Code Build Successfully'
+            }
+        }
+        stage('Code Package') {
+            steps {
+                echo 'Code Packaged'
+            }
+        }
+        stage('Test Code') {
+            steps {
+                echo 'Code Tested Successfully'
+            }
+        }
+        stage('Deploy Code') {
+            steps {
+                echo 'Code Deployed Successfully'
+            }
+        }
+    }
+}
